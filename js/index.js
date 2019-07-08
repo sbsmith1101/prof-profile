@@ -2,6 +2,7 @@
 
 // light and dark mode function
 
+
 var lightbulb = document.querySelector('input[name=light-switch]');
 
 lightbulb.addEventListener('click', function () {
@@ -20,3 +21,4 @@ function switchmode() {
         document.documentElement.classList.remove('transition');
     }, 1200)
 }
+init();
