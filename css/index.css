@@ -224,7 +224,7 @@ html {
 .project-i .project-detail {
   max-height: 0;
   overflow-y: hidden;
-  transition: max-height 1.5s ease-out;
+  transition: max-height .7s ease-out;
 }
 .project-i.is-active .project-detail {
   max-height: 100vh;
@@ -255,9 +255,9 @@ html {
   border-bottom: 1px solid;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  transition: -webkit-transform .7s ease-out;
-  transition: transform .7s ease-out linear;
-  transition: transform .7s ease-out linear, -webkit-transform .2s ease-out;
+  transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out linear;
+  transition: transform .5s ease-out linear, -webkit-transform .2s ease-out;
 }
 
 /* Panel */
@@ -295,7 +295,7 @@ html {
     transition: 0.2s ease-out;
     text-decoration: none;
     transform: translateY(calc(100% + 1rem));
-    animation: toast-pop 0.5s ease-out 2s forwards;
+    animation: toast-pop 0.5s ease-out .5s forwards;
 }
 * {
   padding: 0;
