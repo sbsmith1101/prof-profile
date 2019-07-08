@@ -4,7 +4,7 @@
 
 var lightbulb = document.querySelector('input[name=light-switch]');
 
-lightbulb.addEventListener('change', function () {
+lightbulb.addEventListener('click', function () {
     if (this.checked) {
         switchmode()
         document.documentElement.setAttribute('data-theme', 'darkside')
@@ -14,7 +14,7 @@ lightbulb.addEventListener('change', function () {
     }
 })
 
-let switchmode = () => {
+function switchmode() {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition');
