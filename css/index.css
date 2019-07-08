@@ -303,7 +303,7 @@ html {
 }
 
 html {
-  background-image: url(./static/mistyforest.jpg);
+  background-image: url("./static/mistyforest.jpg");
   min-height: 100%;
   background-position: center center;
 
