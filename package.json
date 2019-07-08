@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1\" jest --colors",
-    "start": "parcel home.html",
-    "predeploy": "rm -rf dist && parcel build home.html"
+    "start": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html"
   },
   "keywords": [],
   "author": "",
