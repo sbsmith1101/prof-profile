@@ -1,15 +1,17 @@
 {
-  "name": "prof-profile",
+  "name": "sbsmith1101.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1\" jest --colors"
+    "test": "echo \"Error: no test specified\" && exit 1\" jest --colors",
+    "start": "parcel index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "parcel": "^1.9.7"
   }
 }
