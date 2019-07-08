@@ -118,46 +118,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/js/index.js":[function(require,module,exports) {
-var checkbox = document.querySelector('input[name=mode]');
-checkbox.addEventListener('change', function () {
+// Tabs shower/ hider
+// light and dark mode function
+var lightbulb = document.querySelector('input[name=light-switch]');
+lightbulb.addEventListener('change', function () {
   if (this.checked) {
-    trans();
+    switchmode();
     document.documentElement.setAttribute('data-theme', 'darkside');
   } else {
-    trans();
+    switchmode();
     document.documentElement.setAttribute('data-theme', 'lightside');
   }
 });
 
-var trans = function trans() {
+var switchmode = function switchmode() {
   document.documentElement.classList.add('transition');
   window.setTimeout(function () {
     document.documentElement.classList.remove('transition');
-  }, 1000);
+  }, 1200);
 };
-
-$(document).ready(function () {
-  var tabWrapper = $("#tab-block"),
-      tabMnu = tabWrapper.find(".tab-mnu  li"),
-      tabContent = tabWrapper.find(".tab-cont > .tab-pane");
-  tabContent.not(":first-child").hide();
-  tabMnu.each(function (i) {
-    $(this).attr("data-tab", "tab" + i);
-  });
-  tabContent.each(function (i) {
-    $(this).attr("data-tab", "tab" + i);
-  });
-  tabMnu.click(function () {
-    var tabData = $(this).data("tab");
-    tabWrapper.find(tabContent).hide();
-    tabWrapper.find(tabContent).filter("[data-tab=" + tabData + "]").show();
-  });
-  $(".tab-mnu > li").click(function () {
-    var before = $(".tab-mnu li.active");
-    before.removeClass("active");
-    $(this).addClass("active");
-  });
-});
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -186,7 +165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62356" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50396" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
