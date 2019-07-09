@@ -303,8 +303,7 @@ html {
 }
 
 html {
-  background-image: url(/mistyforest.3dddcdcc.jpg);
-  background-size: cover;
+  background-image: url("/mistyforest.3dddcdcc.jpg");
   min-height: 100%;
   background-position: center center;
 
@@ -341,6 +340,13 @@ html {
 .smith {
   margin-left: 14%;
 }
+.posi{
+  margin-left: 21%
+}
+.posi2{
+  margin-left: 28%
+}
+
 .favlinks img{
   height: 6rem;
   width: 6rem;
